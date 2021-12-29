@@ -2,14 +2,9 @@
 #include <map>
 #include <string>
 
-class Node {
-    public:
-        bool isEnd;
-        char value;
-        std::map<char, Node> children;
+#include "node.h"
 
-        explicit Node(char c) {
-            value = c;
-            isEnd = false;
-        }
-};
+Node::Node(char c) {
+    value = c;
+    isEnd = false;
+}
