@@ -8,11 +8,12 @@
 
 class Trie {
     public:
-        Node root {'0'};
+        Node root;
 
-        explicit Trie(const std::string *str);
+        explicit Trie();
 
-        void find_word(const std::string *str);
+        bool add_word(const std::string &str);
+        bool find_word(const std::string &str);
 };
 
 #endif
